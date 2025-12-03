@@ -28,14 +28,6 @@ return [
                     'mautic.sms.api',
 		],
             ],
-            'mautic.sms.uazapi.callback' => [
-                'class'     => MauticPlugin\MauticUazapiBundle\Callback\UazapiCallback::class,
-                'arguments' => [
-                    'mautic.sms.helper.contact',
-                    'mautic.sms.uazapi.configuration',
-                ],
-                'tag'   => 'mautic.sms_callback_handler',
-	    ],
 	],
         'integrations' => [
             'mautic.integration.uazapi' => [
